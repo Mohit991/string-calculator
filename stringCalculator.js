@@ -9,6 +9,12 @@ function add(numbers) {
         numbers = parts[1]
     }
     numbers = numbers.split(delimiter).map(Number) //splitting the array based on the delimiter and converting each value to number
+    
+    const negativeNumbers = numbers.filter(num => num < 0)
+    if (negativeNumbers.length > 0){
+        throw new Error(`negative numbers not allowed ${negativeNumbers.join(',')}`)
+    }
+    
     const sumOfValues = numbers.reduce((sum, num) => sum + num, 0) //finding the sum of values, works for any amount of numbers
     return sumOfValues
 }
