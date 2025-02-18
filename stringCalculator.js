@@ -14,8 +14,8 @@ function add(numbers) {
     if (negativeNumbers.length > 0){
         throw new Error(`negative numbers not allowed ${negativeNumbers.join(',')}`)
     }
-    
-    const sumOfValues = numbers.reduce((sum, num) => sum + num, 0) //finding the sum of values, works for any amount of numbers
+
+    const sumOfValues = numbers.filter(num => num < 1000).reduce((sum, num) => sum + num, 0) //finding the sum of values, works for any amount of numbers
     return sumOfValues
 }
 
