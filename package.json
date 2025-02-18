@@ -1,0 +1,14 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "description": "This project implements a string calculator using the TDD approch. It uses JavaScript and Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

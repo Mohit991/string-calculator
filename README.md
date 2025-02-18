@@ -1,0 +1,1 @@
+This project implements a string calculator using the TDD approch. It uses JavaScript and Jest.
